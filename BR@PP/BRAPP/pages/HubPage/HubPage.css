@@ -24,7 +24,7 @@
     .HubPage .HubPageMainDiv .MainImage {
         height: 100%;
         -ms-grid-column: 1;
-        background: url(../../images/HubPage/HUbBigbg.png);
+      /background: url(../../images/HubPage/HUbBigbg.png);
         background-size: cover;
         -ms-grid-rows: 68% 20% 1fr;
         display: -ms-grid;
