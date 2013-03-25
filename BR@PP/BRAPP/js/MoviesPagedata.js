@@ -80,8 +80,8 @@
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[2], title: "book tickets", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[2], title: "Movie", subtitle: "Item Subtitle: 2", recordType: RecordType1.ImageBanner1, description: itemDescription, content: itemContent, backgroundImage: "../../images/MoviesPage/Pic1.png" },
+            { group: sampleGroups[2], title: "YOHSIIISHF", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
+            { group: sampleGroups[2], title: "BORAT", subtitle: "Item Subtitle: 2", recordType: RecordType1.ImageBanner1, description: itemDescription, content: itemContent, backgroundImage: "../../images/MoviesPage/Pic1.png" },
             { group: sampleGroups[2], title: "Movie", subtitle: "Item Subtitle: 2", recordType: RecordType1.ImageBanner1, description: itemDescription, content: itemContent, backgroundImage: "../../images/MoviesPage/Pic2.png" },
             { group: sampleGroups[2], title: "Movie", subtitle: "Item Subtitle: 3", recordType: RecordType1.SecImageBanner1, description: itemDescription, content: itemContent, backgroundImage: "../../images/MoviesPage/Pic3.png" },
             { group: sampleGroups[2], title: "Movie", subtitle: "Item Subtitle: 3", recordType: RecordType1.SecImageBanner1, description: itemDescription, content: itemContent, backgroundImage: "../../images/MoviesPage/Pic2.png" },
