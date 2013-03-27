@@ -75,11 +75,11 @@
 
         // Each of these sample groups must have a unique key to be displayed
         // separately.
-        var sampleGroups = [
-            { key: "group1", title: "Events in your city", subtitle: "", backgroundImage: darkGray, description: groupDescription },
-            { key: "group2", title: "Movies in town", subtitle: "", backgroundImage: lightGray, description: groupDescription },
-            { key: "group3", title: "My bookings", subtitle: "", backgroundImage: mediumGray, description: groupDescription },
-            { key: "group4", title: "Book tickets", subtitle: "", backgroundImage: lightGray, description: groupDescription },
+        var groups = [
+            { key: "group1", title: "Moods", subtitle: "", backgroundImage: darkGray, description: groupDescription },
+            { key: "group2", title: "Sugestions", subtitle: "", backgroundImage: lightGray, description: groupDescription },
+            { key: "group3", title: "Jokes", subtitle: "", backgroundImage: mediumGray, description: groupDescription },
+            { key: "group4", title: "", subtitle: "", backgroundImage: lightGray, description: groupDescription },
             { key: "group5", title: "Group Title: 5", subtitle: "", backgroundImage: mediumGray, description: groupDescription },
             { key: "group6", title: "Group Title: 6", subtitle: "", backgroundImage: darkGray, description: groupDescription }
         ];
@@ -87,47 +87,35 @@
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[0], title: "events in your city", subtitle: "", recordType: RecordType1.Header1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Moods", subtitle: "", recordType: RecordType1.Header1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            
+            { group: groups[2], title: "Sugestions", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
+            { group: groups[2], title: "gfhdh", subtitle: "Item Subtitle: 2", recordType: RecordType1.MoviesTickets1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
+            { group: groups[2], title: "gfhdh", subtitle: "Item Subtitle: 2", recordType: RecordType1.PlaysTickets1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
+            { group: groups[2], title: "gfhdh", subtitle: "Item Subtitle: 3", recordType: RecordType1.EventTickets1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
+            { group: groups[2], title: "gfhdh", subtitle: "Item Subtitle: 3", recordType: RecordType1.SportTickets1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
 
-            { group: sampleGroups[1], title: "Set in the rustic surroundings of a village in Haryana, Matru ki Bijlee ka Mandola is a comedy-drama about Harry Mandola, a wealthy industrialist who loves his drink, his daughter Bijlee and the unusual bond they both share with Harry’s man friday, Matru. Much to her father’s delight, Bijlee is all set to marry Baadal...", titleSub: "Starring: Tom Hanks, Halle Berry, Hugo Weaving, Jim Broadbent", moviesIn: "movies in town", moviesName: "Movie", recordType: RecordType1.MoviesFirst1, description: itemDescription, content: itemContent, backgroundImage: "../../images/HubPage/Hubpic1.png" },
-            { group: sampleGroups[1], title: "Set in the rustic surroundings of a village in Haryana, Matru ki Bijlee ka Mandola is a comedy-drama about Harry Mandola, a wealthy industrialist who loves his drink, his daughter Bijlee and the unusual bond they both share with Harry’s man friday, Matru. Much to her father’s delight, Bijlee is all set to marry Baadal...", titleSub: "Starring: Tom Hanks, Halle Berry, Hugo Weaving, Jim Broadbent", moviesIn: "movies in town", moviesName: "Movie", recordType: RecordType1.MoviesSecond1, description: itemDescription, content: itemContent, backgroundImage: "../../images/HubPage/Hubpic2.png" },
-
-            { group: sampleGroups[2], title: "book tickets", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[2], title: "gfhdh", subtitle: "Item Subtitle: 2", recordType: RecordType1.MoviesTickets1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[2], title: "gfhdh", subtitle: "Item Subtitle: 2", recordType: RecordType1.PlaysTickets1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            { group: sampleGroups[2], title: "gfhdh", subtitle: "Item Subtitle: 3", recordType: RecordType1.EventTickets1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            { group: sampleGroups[2], title: "gfhdh", subtitle: "Item Subtitle: 3", recordType: RecordType1.SportTickets1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-
-            { group: sampleGroups[3], title: "my bookings", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#df6072" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#d85366" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#cd4458" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#c4374c" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#c4374c" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#cd4458" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#d85366" },
-            { group: sampleGroups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#df6072" },
-
-
-            //{ group: sampleGroups[4], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            //{ group: sampleGroups[4], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            //{ group: sampleGroups[4], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            //{ group: sampleGroups[4], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-            //{ group: sampleGroups[5], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            //{ group: sampleGroups[5], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            //{ group: sampleGroups[5], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            //{ group: sampleGroups[5], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            //{ group: sampleGroups[5], title: "Item Title: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-            //{ group: sampleGroups[5], title: "Item Title: 6", subtitle: "Item Subtitle: 6", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-            //{ group: sampleGroups[5], title: "Item Title: 7", subtitle: "Item Subtitle: 7", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-            //{ group: sampleGroups[5], title: "Item Title: 8", subtitle: "Item Subtitle: 8", description: itemDescription, content: itemContent, backgroundImage: lightGray }
+            { group: groups[3], title: "Jokes", subtitle: "Item Subtitle: 1", recordType: RecordType1.HeaderTickets1, description: itemDescription, content: itemContent, backgroundImage: mediumGray },
+            { group: groups[3], title: "Joke", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#df6072" },
+            { group: groups[3], title: "Joke", titleSub: "2 <p><b>qsdfqsdf</b></p> <button>value</button>tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#d85366" },
+            { group: groups[3], title: "Joke", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#cd4458" },
+            { group: groups[3], title: "", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#c4374c" },
+            { group: groups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#c4374c" },
+            { group: groups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#cd4458" },
+            { group: groups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#d85366" },
+            { group: groups[3], title: "Movie", titleSub: "2 tickets (rs. 320)", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Mybooking1, description: itemDescription, content: itemContent, backgroundImage: mediumGray, backgroundColor: "#df6072" },
         ];
 
         return sampleItems;

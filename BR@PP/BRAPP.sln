@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "BRAPP", "LifestyleLightTheme\BRAPP.jsproj", "{DF6B762E-AFC3-41A0-8AB4-C86016072E51}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "BRAPP", "BRAPP\BRAPP.jsproj", "{DF6B762E-AFC3-41A0-8AB4-C86016072E51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
