@@ -1,0 +1,698 @@
+<<<<<<< HEAD
+﻿body{
+	background-color: #5cc9e7;
+	}
+.HubPage section[role=main] {
+=======
+﻿.HubPage section[role=main] {
+>>>>>>> origin/master
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.HubPage .MainLogo {
+    width: auto;
+    height: auto;
+    margin: 0px 40px 0px 0px;
+    position: absolute;
+    z-index: 55;
+    right: 0;
+}
+
+.HubPage .HubPageMainDiv {
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: 694px auto 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    margin: 0px 0px 0px 0px;
+}
+
+    .HubPage .HubPageMainDiv .MainImage {
+        height: 100%;
+        -ms-grid-column: 1;
+      /background: url(../../images/HubPage/HUbBigbg.png);
+        background-size: cover;
+        -ms-grid-rows: 68% 20% 1fr;
+        display: -ms-grid;
+        margin: 0px 0px 0px -30px;
+        float: left;
+    }
+
+        .HubPage .HubPageMainDiv .MainImage .ImageTextDiv {
+            width: 450px;
+            -ms-grid-row: 2;
+            margin: 0px 0px 0px 0px;
+            transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg); /* Internet Explorer */
+        }
+
+.HubPage .BIGBgTitle {
+    font-size: 24px;
+    color: #fff;
+    float: right;
+}
+
+.HubPage .BIGBgSubTitle {
+    width: 440px;
+    height: 100px;
+    font-size: 36px;
+    color: #333333;
+    float: right;
+    background: #badf60;
+    font-weight: lighter;
+    text-align: right;
+    line-height: 40px;
+    padding: 0px 10px 0px 0px;
+}
+
+.HubPage .groupeditemslist {
+    height: 100%;
+    position: relative;
+    min-width: 1800px !important;
+    z-index: 0;
+    overflow-x: hidden !important;
+}
+
+    /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+    .HubPage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-bottom: 60px;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: 128px;
+    }
+
+    .HubPage .groupeditemslist .win-groupheader {
+        padding: 0;
+    }
+
+    /* Use grid and top level layout for truncation */
+    .HubPage .groupeditemslist .group-header {
+        -ms-grid-columns: minmax(0, max-content) 7px max-content;
+        -ms-grid-rows: max-content;
+        display: -ms-inline-grid;
+        line-height: 1.5;
+    }
+
+    /* Override default button styles */
+    .HubPage .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+        background: transparent;
+        border: 0;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 1px;
+        min-height: 0;
+        padding: 0;
+    }
+
+        .HubPage .groupeditemslist .group-header .group-title {
+            display: inline-block;
+        }
+
+        .HubPage .groupeditemslist .group-header .group-chevron {
+            -ms-grid-column: 3;
+            display: inline-block;
+        }
+
+            .HubPage .groupeditemslist .group-header .group-chevron::before {
+                content: "\E26B";
+                font-family: 'Segoe UI Symbol';
+            }
+
+    .HubPage .groupeditemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }
+
+        .HubPage .groupeditemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .HubPage .groupeditemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .HubPage .groupeditemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .HubPage .groupeditemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                width: 220px;
+            }
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .HubPage .groupeditemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .HubPage .groupeditemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .HubPage .groupeditemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .HubPage .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .HubPage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .HubPage .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .HubPage .groupeditemslist .win-container {
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-right: 35px;
+        padding: 7px;
+        background: #badf60;
+    }
+
+    .HubPage .groupeditemslist .item {
+        -ms-grid-columns: 10px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        height: 60px;
+        width: 272px;
+        background: #badf60;
+    }
+
+        .HubPage .groupeditemslist .item .item-image {
+            -ms-grid-column: 1;
+            -ms-grid-row-span: 1;
+            height: 60px;
+            width: 60px;
+            display: none;
+        }
+
+        .HubPage .groupeditemslist .item .item-overlay {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: stretch;
+            background: transparent;
+            display: inline-block;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+            .HubPage .groupeditemslist .item .item-overlay .item-title {
+                margin-top: 15px;
+                max-height: 40px;
+                width: 202px;
+                font-size: 18px;
+            }
+
+            .HubPage .groupeditemslist .item .item-overlay .item-subtitle {
+                opacity: 0.6;
+                width: 202px;
+            }
+
+    .HubPage .HubPageMainDiv {
+        width: 100%;
+        height: 100%;
+        -ms-grid-columns: 0px 320px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        margin: 0px 0px 0px 0px;
+        overflow :hidden;
+    }
+
+        .HubPage .HubPageMainDiv .MainImage {
+            height: 100%;
+            -ms-grid-column: 1;
+            background: url(../../images/HubPage/HUbBigbg.png);
+            background-size: cover;
+            -ms-grid-rows: 68% 20% 1fr;
+            display: none;
+            margin: 0px 0px 0px -30px;
+            float: left;
+        }
+
+    .HubPage .groupeditemslist {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        -ms-grid-column: 2;
+        overflow-x: hidden;
+    }
+
+    .HubPage header[role=banner] .titlearea {
+        -ms-grid-column: 2;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .HubPage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 25px;
+    }
+}
+/*Template Css*/
+
+/*HeaderTemplate Css*/
+.HubPage .HeaderTemplate {
+    width: 600px;
+    height: 95px;
+    background: #000;
+}
+
+.HubPage .HeaderTopbanner {
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 18px 10px 0px 0px;
+}
+
+.HubPage .HeaderLinerDiv {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.HubPage .HeadertextDiv {
+    width: auto;
+    height: auto;
+    float: left;
+    color: #fff;
+    font-size: 36px;
+    font-weight: lighter;
+}
+/*HeaderTemplate Css End*/
+
+/*EventsTemplate Css*/
+.HubPage .EventsTemplate {
+    width: 295px;
+    height: 123px;
+    background: black;
+}
+
+.HubPage .EventsMainDIv {
+    width: 270px;
+    height: 120px;
+    margin: auto;
+}
+
+.HubPage .EventsTitle {
+    width: auto;
+    height: auto;
+    color: #60dadf;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.HubPage .EventsTitleSub {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.HubPage .EventsTextDay {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.HubPage .EventsTextTime {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+/*EventsTemplate Css End*/
+
+/*MoviesFirstTemplate Css */
+.HubPage .MoviesFirstTemplate {
+    width: 400px;
+    height: 500px;
+    -ms-grid-rows: 209px 290px 1fr;
+    display: -ms-grid;
+}
+
+    .HubPage .MoviesFirstTemplate .MFImageBanner {
+        width: 400px;
+        -ms-grid-row: 1;
+    }
+
+    .HubPage .MoviesFirstTemplate .MFTextBanner {
+        width: 400px;
+        -ms-grid-row: 2;
+        background: black;
+    }
+
+.HubPage .MoviesFirstMain {
+    width: 362px;
+    height: 270px;
+    margin: auto;
+}
+
+.HubPage .MoviesInnerDiv {
+    width: 362px;
+    height: 61px;
+    margin: 10px 0px 0px 0px;
+}
+
+.HubPage .MFTitle {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.HubPage .MFTitleSub {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 10px 0px 0px 0px;
+}
+
+.HubPage .StarDiv {
+    width: 160px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    float: right;
+}
+/*MoviesFirstTemplate Css End*/
+
+/*MoviesSecondTemplate Css*/
+.HubPage .MoviesSecondTemplate {
+    width: 400px;
+    height: 500px;
+    -ms-grid-rows: 290px 209px 1fr;
+    display: -ms-grid;
+}
+
+    .HubPage .MoviesSecondTemplate .MSImageBanner {
+        width: 400px;
+        -ms-grid-row: 2;
+    }
+
+    .HubPage .MoviesSecondTemplate .MSTextBanner {
+        width: 400px;
+        -ms-grid-row: 1;
+        background: black;
+    }
+
+.HubPage .MoviesFirstMain {
+    width: 362px;
+    height: 270px;
+    margin: auto;
+}
+
+.HubPage .MoviesInnerDiv {
+    width: 362px;
+    height: 61px;
+    margin: 10px 0px 0px 0px;
+}
+
+.HubPage .MSTitle {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.HubPage .MSTitleSub {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 10px 0px 0px 0px;
+}
+
+.HubPage .StarDiv {
+    width: 160px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    float: right;
+}
+/*MoviesSecondTemplate Css End*/
+
+/*HeaderTicketsTemplate Css*/
+.HubPage .HeaderTicketsTemplate {
+    width: 600px;
+    height: 95px;
+    background: #000;
+}
+
+.HubPage .HTSTopbanner {
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 18px 10px 0px 0px;
+}
+
+.HubPage .HTSLinerDiv {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.HubPage .HTStextDiv {
+    width: auto;
+    height: auto;
+    float: left;
+    color: #fff;
+    font-size: 36px;
+    font-weight: lighter;
+}
+/*HeaderTicketsTemplate Css End*/
+
+/*MoviesTicketsTemlate Css*/
+.HubPage .MoviesTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffae00;
+}
+
+.HubPage .MTOneDiv {
+    width: 110px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    float: left;
+}
+
+.HubPage .MTradioDiv {
+    width: 110px;
+    height: auto;
+    float: left;
+    margin: 0px 0px 5px 0px;
+}
+
+.HubPage .MTSelectDiv {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+/*MoviesTicketsTemlate Css End*/
+
+/*PlaysTicketsTemlate Css*/
+.HubPage .PlaysTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffc13d;
+}
+
+.HubPage .PToneDiv {
+    width: 250px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    float: left;
+}
+/*PlaysTicketsTemlate Css End*/
+
+/*EventTicketsTemlate Css*/
+.HubPage .EventTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffd374;
+}
+/*EventTicketsTemlate Css End*/
+
+/*SportTicketsTemlate Css*/
+.HubPage .SportTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffe6b1;
+}
+/*SportTicketsTemlate Css End*/
+
+/*MybookingTemlate Css */
+.HubPage .MybookingTemlate {
+    width: 295px;
+    height: 95px;
+    background: #c4374c;
+}
+
+.HubPage .MybookingMainDIv {
+    width: 270px;
+    height: 95px;
+    margin: auto;
+}
+
+.HubPage .MybookingTitle {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.HubPage .MybookingTitleSub {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.HubPage .MybookingTextDay {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.HubPage .MybookingTextTime {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*MybookingTemlate Css End*/
+
+
+
+
+/*
+Rating control colors.
+*/
+.HubPage .win-rating .win-star.win-user.win-full,
+.HubPage .win-rating .win-star.win-user.win-full.win-disabled {
+    color: #badf60;
+}
+
+.HubPage .win-rating .win-star.win-tentative.win-full {
+    color: #badf60;
+}
+
+.HubPage .win-rating .win-star.win-average.win-full,
+.HubPage .win-rating .win-star.win-average.win-full.win-disabled {
+    color: #badf60;
+}
+
+.HubPage .win-rating .win-star.win-empty {
+    color: #4e4e4e;
+}
+
+.HubPage .win-ui-light .win-rating .win-star.win-user.win-full,
+.HubPage .win-ui-light .win-rating .win-star.win-user.win-full.win-disabled {
+    color: #4e4e4e;
+}
+
+.HubPage .win-ui-light .win-rating .win-star.win-tentative.win-full {
+    color: #4e4e4e;
+}
+
+.HubPage .win-ui-light .win-rating .win-star.win-average.win-full,
+.HubPage .win-ui-light .win-rating .win-star.win-average.win-full.win-disabled {
+    color: #4e4e4e;
+}
+
+.HubPage .win-ui-light .win-rating .win-star.win-empty {
+    color: #4e4e4e;
+}
+
+
+
+
+
+/*
+Select control.
+*/
+select {
+    min-height: 32px;
+    min-width: 200px;
+    margin: 0px 0;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+    background: #fff4dc;
+    color: #000;
+    font-size: 16px;
+}
+
+    select::-ms-value {
+        padding: 4px 8px;
+        margin: 0;
+        color: #000;
+    }
+
+    select::-ms-expand {
+        border: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        background-color: transparent;
+        color: #000;
+    }
+
+option {
+    color: #000;
+    font-size: 14px;
+}
+
+    /*
+    Select option high contrast colors.
+    */
+    option:checked, select:focus::-ms-value {
+        color: HighlightText;
+        background-color: #333333;
+    }
+
+        select:active:not(:disabled)::-ms-value, select:active:not(:disabled)::-ms-expand,
+        option:hover:active, option:checked:hover:active {
+            color: ButtonFace;
+            background-color: #333333;
+        }
+
+        option:checked:disabled, option:checked:disabled:active,
+        optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+        select:disabled option:checked, select:disabled option:checked:active,
+        select:disabled:focus::-ms-value {
+            color: ButtonFace;
+            background-color: #333333;
+        }
