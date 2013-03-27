@@ -29,7 +29,7 @@
             if (key == "group1") {
                 nav.navigate("/pages/EventsPage/EventsPage.html", { groupKey: key });
             }
-            if (key == "group2") {
+           /* if (key == "group2") {
                 nav.navigate("/pages/MoviesPage/MoviesPage.html", { groupKey: key });
             }
             if (key == "group3") {
@@ -37,7 +37,7 @@
             }
             if (key == "group4") {
                 nav.navigate("/pages/BookingsPage/BookingsPage.html", { groupKey: key });
-            }
+            }*/
         },
 
 

@@ -80,7 +80,7 @@
 
         // Each of these sample items should have a reference to a particular
         // group.
-        var sampleItems = [
+        /*var sampleItems = [
             { group: sampleGroups[0], title: "events in your city", subtitle: "", recordType: RecordType1.Header1, description: itemDescription, content: itemContent, backgroundImage: lightGray },
             { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
             { group: sampleGroups[0], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.Events1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
@@ -91,8 +91,8 @@
 
             { group: sampleGroups[1], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.AddT1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
 
-            { group: sampleGroups[2], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.OldSchool1, description: itemDescription, content: itemContent, backgroundImage: darkGray },
-
+            { group: sampleGroups[2], title: "Title", titleSub: "sub title", textDay: "saturday 13 jan", textTime: "timing: 7-11pm", recordType: RecordType1.OldSchool1, description: itemDescription, content: itemContent, backgroundImage: darkGray },*/
+			
             //{ group: sampleGroups[4], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
             //{ group: sampleGroups[4], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
             //{ group: sampleGroups[4], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
@@ -107,7 +107,7 @@
             //{ group: sampleGroups[5], title: "Item Title: 7", subtitle: "Item Subtitle: 7", description: itemDescription, content: itemContent, backgroundImage: darkGray },
             //{ group: sampleGroups[5], title: "Item Title: 8", subtitle: "Item Subtitle: 8", description: itemDescription, content: itemContent, backgroundImage: lightGray }
         ];
-
+		
         return sampleItems;
     }
     WinJS.Namespace.define("EventsPagedata", {

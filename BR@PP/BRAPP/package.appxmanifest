@@ -17,10 +17,10 @@
     <Application Id="App" StartPage="default.html">
       <VisualElements DisplayName="BRAPP" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="BRAPP" ForegroundText="light" BackgroundColor="#5cc9e7">
         <DefaultTile ShowName="allLogos" WideLogo="images\widelogo.png" ShortName="BR@PP" />
- >>>>>>> HEAD
-        <SplashScreen Image="images\SplashScreen.png" BackgroundColor="#5cc9e7" />
+ 
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#5cc9e7" />
 
->>>>>>> origin/Lode-dev
+
       </VisualElements>
       <Extensions>
         <Extension Category="windows.search" />

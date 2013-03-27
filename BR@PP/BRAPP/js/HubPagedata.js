@@ -75,14 +75,14 @@
 
         // Each of these sample groups must have a unique key to be displayed
         // separately.
-        var sampleGroups = [
+        /*var sampleGroups = [
             { key: "group1", title: "Events in your city", subtitle: "", backgroundImage: darkGray, description: groupDescription },
             { key: "group2", title: "Movies in town", subtitle: "", backgroundImage: lightGray, description: groupDescription },
             { key: "group3", title: "My bookings", subtitle: "", backgroundImage: mediumGray, description: groupDescription },
             { key: "group4", title: "Book tickets", subtitle: "", backgroundImage: lightGray, description: groupDescription },
             { key: "group5", title: "Group Title: 5", subtitle: "", backgroundImage: mediumGray, description: groupDescription },
             { key: "group6", title: "Group Title: 6", subtitle: "", backgroundImage: darkGray, description: groupDescription }
-        ];
+        ];*/
 
         // Each of these sample items should have a reference to a particular
         // group.
