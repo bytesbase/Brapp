@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HubPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/MoviesPage/MoviesPage.css" rel="stylesheet" />
+    <script src="/js/MoviesPagedata.js"></script>
+    <script src="/pages/MoviesPage/MoviesPage.js"></script>
+</head>
+<body>
+    <!-- These templates are used to display each item in the ListView declared below. -->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <button class="group-header win-type-x-large win-type-interactive" data-win-bind="groupKey: key"
+            onclick="Application.navigator.pageControl.navigateToGroup(event.srcElement.groupKey)" role="link" tabindex="-1" type="button">
+            <!-- <span class="group-title win-type-ellipsis" data-win-bind="textContent: title"></span>
+            <span class="group-chevron"></span>-->
+        </button>
+    </div>
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+            </div>
+        </div>
+    </div>
+
+    <!--HeaderTicketsTemplate-->
+    <div class="HeaderTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="HeaderTicketsTemplate">
+            <div class="HTSTopbanner">
+                <div class="HTSLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+                <div class="HTStextDiv" data-win-bind="textContent: title"></div>
+                <div class="HTSLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HeaderTicketsTemplate-->
+
+    <!--ImageBannerTemlate-->
+    <div class="ImageBannerBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="ImageBannerTemlate win-interactive">
+            <div style="width: auto; height: auto; background: #201f1e; position: absolute; right: 0; font-size: 18px; color: #badf60; padding: 10px 10px 10px 10px; margin: 15px 0px 0px 0px;" data-win-bind="textContent: title"></div>
+            <div style="width: 189px; height: 41px; background: #201f1e; position: absolute; bottom: 0; font-size: 18px; color: #badf60; margin: 0px 0px 15px 0px; padding: 4px 0px 0px 0px;" data-win-control="WinJS.UI.Rating"></div>
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        </div>
+    </div>
+    <!--ImageBannerTemlate-->
+
+    <!--SecImageBannerTemlate-->
+    <div class="SecImageBannerBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="SecImageBannerTemlate win-interactive">
+            <div style="width: auto; height: auto; background: #201f1e; position: absolute; right: 0; font-size: 18px; color: #badf60; padding: 10px 10px 10px 10px; margin: 15px 0px 0px 0px;" data-win-bind="textContent: title"></div>
+            <div style="width: 189px; height: 41px; background: #201f1e; position: absolute; bottom: 0; font-size: 18px; color: #badf60; margin: 0px 0px 15px 0px; padding: 4px 0px 0px 0px;" data-win-control="WinJS.UI.Rating"></div>
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        </div>
+    </div>
+    <!--SecImageBannerTemlate-->
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment MoviesPage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button" style="position:absolute;z-index:55;"></button>
+            <!--<h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">LifestyleLightTheme</span>
+            </h1>-->
+            <div class="titlearea">
+                <div class="MainLogo">
+                    <img src="../../images/AppLogo.png" /></div>
+            </div>
+        </header>
+        <section aria-label="Main content" role="main" style="overflow: auto">
+            <div class="MoviesPageMainDiv">
+                <div class="MainImage">
+                    <div class="ImageTextDiv">
+                        <div class="BIGBgTitle">Featured Movie</div>
+                        <div class="BIGBgSubTitle">
+                            Movie
+                        </div>
+                    </div>
+                </div>
+                <div class="MainTOwDuv">
+                    <div class="MainShowTimingDIv">
+                        <div class="HTSTopbanner">
+                            <div class="HTSLinerDiv">
+                                <img src="../../images/HubPage/HubHeaderLine.png" />
+                            </div>
+                            <div class="HTStextDiv">show timings</div>
+                            <div class="HTSLinerDiv">
+                                <img src="../../images/HubPage/HubHeaderLine.png" />
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                        <div class="ShowInnerDiv">
+                            <div class="ShowDetailDiv">Theater</div>
+                            <div class="ShowTimeDiv">
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                            </div>
+                        </div>
+                        <div class="ShowInnerDiv">
+                            <div class="ShowDetailDiv">
+                                Theater
+                            </div>
+                            <div class="ShowTimeDiv">
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                            </div>
+                        </div>
+                        <div class="ShowInnerDiv">
+                            <div class="ShowDetailDiv">
+                                Theater
+                            </div>
+                            <div class="ShowTimeDiv">
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                            </div>
+                        </div>
+                        <div class="ShowInnerDiv">
+                            <div class="ShowDetailDiv">
+                                Theater
+                            </div>
+                            <div class="ShowTimeDiv">
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                            </div>
+                        </div>
+                        <div class="ShowInnerDiv">
+                            <div class="ShowDetailDiv">Theater</div>
+                            <div class="ShowTimeDiv">
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MainShowTimingDIvTwocolum">
+                        <div style="width: 600px; height: auto; background: #000; padding: 0px 0px 20px 0px;">
+                            <div class="HTSTopbanner">
+                                <div class="HTSLinerDiv">
+                                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                                </div>
+                                <div class="HTStextDiv">book tickets</div>
+                                <div class="HTSLinerDiv">
+                                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="MTOneDiv">
+                                <div class="MTradioDiv">
+                                    <input type="radio" style="float: left; width: 15px; height: 13px;" />
+                                    <div style="width: auto; height: auto; color: #fff; float: left; font-size: 16px; line-height: 18px;">movies</div>
+                                </div>
+                                <div class="MTradioDiv">
+                                    <input type="radio" style="float: left; width: 15px; height: 13px;" />
+                                    <div style="width: auto; height: auto; color: #fff; float: left; font-size: 16px; line-height: 18px;">cinemas</div>
+                                </div>
+                                <div style="clear: both;"></div>
+                                <div class="MTSelectDiv" style="margin: 10px 12px 0px 0px; float: left;">
+                                    <select>
+                                        <option selected="selected">select plays</option>
+                                        <option>Demo 1</option>
+                                        <option>Demo 2</option>
+                                        <option>Demo 3</option>
+                                        <option>Demo 4</option>
+                                        <option>Demo 5</option>
+                                    </select>
+                                </div>
+                                <div class="MTSelectDiv" style="margin: 10px 0px 0px 0px; float: left;">
+                                    <select>
+                                        <option selected="selected">select date</option>
+                                        <option>Demo 1</option>
+                                        <option>Demo 2</option>
+                                        <option>Demo 3</option>
+                                        <option>Demo 4</option>
+                                        <option>Demo 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div style="width: 600px; height: auto; background: #000; padding: 10px 0px 35px 0px; margin: 10px 0px 0px 0px;">
+                            <div class="ShowInnerDiv">
+                                <div class="ShowDetailDiv" style="color: #ffc13d;">Theater</div>
+                                <div class="ShowTimeDiv">
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                </div>
+                            </div>
+                            <div class="ShowInnerDiv">
+                                <div class="ShowDetailDiv" style="color: #ffc13d;">Theater</div>
+                                <div class="ShowTimeDiv">
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                </div>
+                            </div>
+                            <div class="ShowInnerDiv">
+                                <div class="ShowDetailDiv" style="color: #ffc13d;">Theater</div>
+                                <div class="ShowTimeDiv">
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                </div>
+                            </div>
+                            <div class="ShowInnerDiv">
+                                <div class="ShowDetailDiv" style="color: #ffc13d;">Theater</div>
+                                <div class="ShowTimeDiv">
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                    <div style="float: left; margin: 0px 15px 0px 0px; color: #fff; font-family: 14px;">10:30 am</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none' }" style="-ms-grid-column: 3; overflow-x: hidden;"></div>
+            </div>
+            <div class="SnapDiv">"Please switch to full screen to view the details."</div>
+        </section>
+    </div>
+</body>
+</html>

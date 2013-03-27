@@ -1,0 +1,636 @@
+﻿.BookingsPage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.BookingsPage .MainLogo {
+    width: auto;
+    height: auto;
+    margin: 0px 40px 0px 0px;
+    position: absolute;
+    z-index: 55;
+    right:0;
+}
+
+.BookingsPage .groupeditemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+    .BookingsPage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-bottom: 60px;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-top: 128px;
+    }
+
+    .BookingsPage .groupeditemslist .win-groupheader {
+        padding: 0;
+    }
+
+    /* Use grid and top level layout for truncation */
+    .BookingsPage .groupeditemslist .group-header {
+        -ms-grid-columns: minmax(0, max-content) 7px max-content;
+        -ms-grid-rows: max-content;
+        display: -ms-inline-grid;
+        line-height: 1.5;
+    }
+
+    /* Override default button styles */
+    .BookingsPage .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+        background: transparent;
+        border: 0;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 1px;
+        min-height: 0;
+        padding: 0;
+    }
+
+        .BookingsPage .groupeditemslist .group-header .group-title {
+            display: inline-block;
+        }
+
+        .BookingsPage .groupeditemslist .group-header .group-chevron {
+            -ms-grid-column: 3;
+            display: inline-block;
+        }
+
+            .BookingsPage .groupeditemslist .group-header .group-chevron::before {
+                content: "\E26B";
+                font-family: 'Segoe UI Symbol';
+            }
+
+    .BookingsPage .groupeditemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }
+
+        .BookingsPage .groupeditemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .BookingsPage .groupeditemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .BookingsPage .groupeditemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .BookingsPage .groupeditemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                width: 220px;
+            }
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .BookingsPage .groupeditemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .BookingsPage .groupeditemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .BookingsPage .groupeditemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+
+    .BookingsPage .SnapDiv {
+        font-size: 18px;
+        color: #fff;
+        width: auto;
+        height: auto;
+        margin: 300px 0px 0px 20px;
+        color: #000;
+        display: none;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .BookingsPage .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .BookingsPage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .BookingsPage .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .BookingsPage .groupeditemslist .win-container {
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-right: 35px;
+        padding: 7px;
+    }
+
+    .BookingsPage .groupeditemslist .item {
+        -ms-grid-columns: 60px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        height: 60px;
+        width: 272px;
+    }
+
+        .BookingsPage .groupeditemslist .item .item-image {
+            -ms-grid-column: 1;
+            -ms-grid-row-span: 1;
+            height: 60px;
+            width: 60px;
+        }
+
+        .BookingsPage .groupeditemslist .item .item-overlay {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: stretch;
+            background: transparent;
+            display: inline-block;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+            .BookingsPage .groupeditemslist .item .item-overlay .item-title {
+                margin-top: 4px;
+                max-height: 40px;
+                width: 202px;
+            }
+
+            .BookingsPage .groupeditemslist .item .item-overlay .item-subtitle {
+                opacity: 0.6;
+                width: 202px;
+            }
+
+    .BookingsPage .SnapDiv {
+        font-size: 18px;
+        color: #fff;
+        width: auto;
+        height: auto;
+        margin: 300px 0px 0px 20px;
+        color: #000;
+    }
+
+    .BookingsPage header[role=banner] .titlearea {
+        -ms-grid-column: 2;
+        margin-top: 10px;
+    }
+
+    .BookingsPage .groupeditemslist {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        display: none;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .BookingsPage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 25px;
+    }
+}
+/*Template Css*/
+
+/*HeaderTemplate Css*/
+.BookingsPage .HeaderTemplate {
+    width: 600px;
+    height: 95px;
+    background: #000;
+}
+
+.BookingsPage .HeaderTopbanner {
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 18px 10px 0px 0px;
+}
+
+.BookingsPage .HeaderLinerDiv {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.BookingsPage .HeadertextDiv {
+    width: auto;
+    height: auto;
+    float: left;
+    color: #fff;
+    font-size: 36px;
+    font-weight: lighter;
+}
+/*HeaderTemplate Css End*/
+
+/*EventsTemplate Css*/
+.BookingsPage .EventsTemplate {
+    width: 295px;
+    height: 120px;
+    background: black;
+}
+
+.BookingsPage .EventsMainDIv {
+    width: 270px;
+    height: 120px;
+    margin: auto;
+}
+
+.BookingsPage .EventsTitle {
+    width: auto;
+    height: auto;
+    color: #60dadf;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.BookingsPage .EventsTitleSub {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.BookingsPage .EventsTextDay {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.BookingsPage .EventsTextTime {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+/*EventsTemplate Css End*/
+
+/*MoviesFirstTemplate Css */
+.BookingsPage .MoviesFirstTemplate {
+    width: 400px;
+    height: 500px;
+    -ms-grid-rows: 209px 290px 1fr;
+    display: -ms-grid;
+}
+
+    .BookingsPage .MoviesFirstTemplate .MFImageBanner {
+        width: 400px;
+        -ms-grid-row: 1;
+    }
+
+    .BookingsPage .MoviesFirstTemplate .MFTextBanner {
+        width: 400px;
+        -ms-grid-row: 2;
+        background: black;
+    }
+
+.BookingsPage .MoviesFirstMain {
+    width: 362px;
+    height: 270px;
+    margin: auto;
+}
+
+.BookingsPage .MoviesInnerDiv {
+    width: 362px;
+    height: 61px;
+    margin: 10px 0px 0px 0px;
+}
+
+.BookingsPage .MFTitle {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.BookingsPage .MFTitleSub {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 10px 0px 0px 0px;
+}
+
+.BookingsPage .StarDiv {
+    width: 160px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    float: right;
+}
+/*MoviesFirstTemplate Css End*/
+
+/*MoviesSecondTemplate Css*/
+.BookingsPage .MoviesSecondTemplate {
+    width: 400px;
+    height: 500px;
+    -ms-grid-rows: 290px 209px 1fr;
+    display: -ms-grid;
+}
+
+    .BookingsPage .MoviesSecondTemplate .MSImageBanner {
+        width: 400px;
+        -ms-grid-row: 2;
+    }
+
+    .BookingsPage .MoviesSecondTemplate .MSTextBanner {
+        width: 400px;
+        -ms-grid-row: 1;
+        background: black;
+    }
+
+.BookingsPage .MoviesFirstMain {
+    width: 362px;
+    height: 270px;
+    margin: auto;
+}
+
+.BookingsPage .MoviesInnerDiv {
+    width: 362px;
+    height: 61px;
+    margin: 10px 0px 0px 0px;
+}
+
+.BookingsPage .MSTitle {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.BookingsPage .MSTitleSub {
+    width: 362px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 10px 0px 0px 0px;
+}
+
+.BookingsPage .StarDiv {
+    width: 160px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    float: right;
+}
+/*MoviesSecondTemplate Css End*/
+
+/*HeaderTicketsTemplate Css*/
+.BookingsPage .HeaderTicketsTemplate {
+    width: 600px;
+    height: 95px;
+    background: #000;
+}
+
+.BookingsPage .HTSTopbanner {
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 18px 10px 0px 0px;
+}
+
+.BookingsPage .HTSLinerDiv {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.BookingsPage .HTStextDiv {
+    width: auto;
+    height: auto;
+    float: left;
+    color: #fff;
+    font-size: 36px;
+    font-weight: lighter;
+}
+/*HeaderTicketsTemplate Css End*/
+
+/*MoviesTicketsTemlate Css*/
+.BookingsPage .MoviesTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffae00;
+}
+
+.BookingsPage .MTOneDiv {
+    width: 110px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    float: left;
+}
+
+.BookingsPage .MTradioDiv {
+    width: 110px;
+    height: auto;
+    float: left;
+    margin: 0px 0px 5px 0px;
+}
+
+.BookingsPage .MTSelectDiv {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+/*MoviesTicketsTemlate Css End*/
+
+/*PlaysTicketsTemlate Css*/
+.BookingsPage .PlaysTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffc13d;
+}
+
+.BookingsPage .PToneDiv {
+    width: 250px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    float: left;
+}
+/*PlaysTicketsTemlate Css End*/
+
+/*EventTicketsTemlate Css*/
+.BookingsPage .EventTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffd374;
+}
+/*EventTicketsTemlate Css End*/
+
+/*SportTicketsTemlate Css*/
+.BookingsPage .SportTicketsTemlate {
+    width: 600px;
+    height: 95px;
+    background: #ffe6b1;
+}
+/*SportTicketsTemlate Css End*/
+
+/*MybookingTemlate Css */
+.BookingsPage .MybookingTemlate {
+    width: 295px;
+    height: 95px;
+    background: #c4374c;
+}
+
+.BookingsPage .MybookingMainDIv {
+    width: 270px;
+    height: 95px;
+    margin: auto;
+}
+
+.BookingsPage .MybookingTitle {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.BookingsPage .MybookingTitleSub {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.BookingsPage .MybookingTextDay {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.BookingsPage .MybookingTextTime {
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*MybookingTemlate Css End*/
+
+
+
+
+/*
+Rating control colors.
+*/
+.BookingsPage .win-rating .win-star.win-user.win-full,
+.BookingsPage .win-rating .win-star.win-user.win-full.win-disabled {
+    color: #badf60;
+}
+
+.BookingsPage .win-rating .win-star.win-tentative.win-full {
+    color: #badf60;
+}
+
+.BookingsPage .win-rating .win-star.win-average.win-full,
+.BookingsPage .win-rating .win-star.win-average.win-full.win-disabled {
+    color: #badf60;
+}
+
+.BookingsPage .win-rating .win-star.win-empty {
+    color: #4e4e4e;
+}
+
+.BookingsPage .win-ui-light .win-rating .win-star.win-user.win-full,
+.BookingsPage .win-ui-light .win-rating .win-star.win-user.win-full.win-disabled {
+    color: #4e4e4e;
+}
+
+.BookingsPage .win-ui-light .win-rating .win-star.win-tentative.win-full {
+    color: #4e4e4e;
+}
+
+.BookingsPage .win-ui-light .win-rating .win-star.win-average.win-full,
+.BookingsPage .win-ui-light .win-rating .win-star.win-average.win-full.win-disabled {
+    color: #4e4e4e;
+}
+
+.BookingsPage .win-ui-light .win-rating .win-star.win-empty {
+    color: #4e4e4e;
+}
+
+
+
+
+
+/*
+Select control.
+*/
+select {
+    min-height: 32px;
+    min-width: 200px;
+    margin: 0px 0;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+    background: #fff4dc;
+    color: #000;
+    font-size: 16px;
+}
+
+    select::-ms-value {
+        padding: 4px 8px;
+        margin: 0;
+        color: #000;
+    }
+
+    select::-ms-expand {
+        border: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        background-color: transparent;
+        color: #000;
+    }
+
+option {
+    color: #000;
+    font-size: 14px;
+}
+
+    /*
+    Select option high contrast colors.
+    */
+    option:checked, select:focus::-ms-value {
+        color: HighlightText;
+        background-color: #333333;
+    }
+
+        select:active:not(:disabled)::-ms-value, select:active:not(:disabled)::-ms-expand,
+        option:hover:active, option:checked:hover:active {
+            color: ButtonFace;
+            background-color: #333333;
+        }
+
+        option:checked:disabled, option:checked:disabled:active,
+        optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+        select:disabled option:checked, select:disabled option:checked:active,
+        select:disabled:focus::-ms-value {
+            color: ButtonFace;
+            background-color: #333333;
+        }

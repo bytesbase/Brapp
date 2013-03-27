@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HubPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/HubPage/HubPage.css" rel="stylesheet" />
+    <script src="/js/HubPagedata.js"></script>
+    <script src="/pages/HubPage/HubPage.js"></script>
+</head>
+<body>
+    <!-- These templates are used to display each item in the ListView declared below. -->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <button class="group-header win-type-x-large win-type-interactive" data-win-bind="groupKey: key"
+            onclick="Application.navigator.pageControl.navigateToGroup(event.srcElement.groupKey)" role="link" tabindex="-1" type="button">
+         <!--    <span class="group-title win-type-ellipsis" data-win-bind="textContent: title"></span>
+            <span class="group-chevron"></span>-->
+        </button>
+    </div>
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+            </div>
+        </div>
+    </div>
+
+    <!--HeaderTemplate-->
+    <div class="HeaderBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="HeaderTemplate">
+            <div class="HeaderTopbanner">
+                <div class="HeaderLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+                <div class="HeadertextDiv" data-win-bind="textContent: title"></div>
+                <div class="HeaderLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HeaderTemplate-->
+
+    <!--HeaderTemplate-->
+    <div class="EventsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="EventsTemplate">
+            <div class="EventsMainDIv">
+                <div class="EventsTitle" data-win-bind="textContent: title"></div>
+                <div class="EventsTitleSub" data-win-bind="textContent: titleSub"></div>
+                <div class="EventsTextDay" data-win-bind="textContent: textDay"></div>
+                <div class="EventsTextTime" data-win-bind="textContent:  textTime"></div>
+            </div>
+        </div>
+    </div>
+    <!--HeaderTemplate-->
+
+    <!--MoviesFirstTemplate-->
+    <div class="MoviesFirstBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="MoviesFirstTemplate">
+            <div class="MFImageBanner">
+                <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            </div>
+            <div class="MFTextBanner">
+                <div class="MoviesFirstMain">
+                    <div class="MoviesInnerDiv">
+                        <div style="width: 69px; height: auto; color: #fff; float: left; font-size: 18px;" data-win-bind="textContent: moviesIn"></div>
+                        <div style="width: auto; height: auto; color: #badf60; float: right; font-size: 30px; font-weight: lighter;" data-win-bind="textContent: moviesName"></div>
+                    </div>
+                    <div class="MFTitle" data-win-bind="textContent: title"></div>
+                    <div class="MFTitleSub" data-win-bind="textContent: titleSub"></div>
+                    <div class="StarDiv" data-win-control="WinJS.UI.Rating"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MoviesFirstTemplate-->
+
+    <!--MoviesSecondTemplate-->
+    <div class="MoviesSecondBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="MoviesSecondTemplate">
+            <div class="MSImageBanner">
+                <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            </div>
+            <div class="MSTextBanner">
+                <div class="MoviesFirstMain">
+                    <div class="MoviesInnerDiv">
+                        <div style="width: 69px; height: auto; color: #fff; float: left; font-size: 18px;" data-win-bind="textContent: moviesIn"></div>
+                        <div style="width: auto; height: auto; color: #badf60; float: right; font-size: 30px; font-weight: lighter;" data-win-bind="textContent: moviesName"></div>
+                    </div>
+                    <div class="MSTitle" data-win-bind="textContent: title"></div>
+                    <div class="MSTitleSub" data-win-bind="textContent: titleSub"></div>
+                    <div class="StarDiv" data-win-control="WinJS.UI.Rating"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MoviesSecondTemplate-->
+
+    <!--HeaderTicketsTemplate-->
+    <div class="HeaderTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="HeaderTicketsTemplate">
+            <div class="HTSTopbanner">
+                <div class="HTSLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+                <div class="HTStextDiv" data-win-bind="textContent: title"></div>
+                <div class="HTSLinerDiv">
+                    <img src="../../images/HubPage/HubHeaderLine.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HeaderTicketsTemplate-->
+
+    <!--MoviesTicketsTemlate-->
+    <div class="MoviesTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="MoviesTicketsTemlate win-interactive">
+            <div class="MTOneDiv">
+                <div style="width: auto; height: auto; color: #000; float: left; font-size: 24px;">movies</div>
+                <div class="MTradioDiv">
+                    <input type="radio" style="float: left; width: 15px; height: 13px;" />
+                    <div style="width: auto; height: auto; color: #000; float: left; font-size: 16px; line-height: 18px;">movies</div>
+                </div>
+                <div class="MTradioDiv">
+                    <input type="radio" style="float: left; width: 15px; height: 13px;" />
+                    <div style="width: auto; height: auto; color: #000; float: left; font-size: 16px; line-height: 18px;">cinemas</div>
+                </div>
+            </div>
+            <div class="MTSelectDiv" style="margin: 28px 25px 0px 0px;">
+                <select>
+                    <option selected="selected">select movie</option>
+                    <option>Demo 1</option>
+                    <option>Demo 2</option>
+                    <option>Demo 3</option>
+                    <option>Demo 4</option>
+                    <option>Demo 5</option>
+                </select>
+            </div>
+            <div class="MTSelectDiv" style="margin: 28px 0px 0px 0px;">
+                <select>
+                    <option selected="selected">select date</option>
+                    <option>Demo 1</option>
+                    <option>Demo 2</option>
+                    <option>Demo 3</option>
+                    <option>Demo 4</option>
+                    <option>Demo 5</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--MoviesTicketsTemlate-->
+
+    <!--PlaysTicketsTemlate-->
+    <div class="PlaysTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="PlaysTicketsTemlate win-interactive">
+            <div class="PToneDiv">
+                <div style="width: auto; height: auto; color: #000; float: left; font-size: 24px;">plays</div>
+                <div class="MTSelectDiv" style="margin: 8px 0px 0px 0px;">
+                    <select>
+                        <option selected="selected">select plays</option>
+                        <option>Demo 1</option>
+                        <option>Demo 2</option>
+                        <option>Demo 3</option>
+                        <option>Demo 4</option>
+                        <option>Demo 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PlaysTicketsTemlate-->
+
+    <!--EventTicketsTemlate-->
+    <div class="EventTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="EventTicketsTemlate win-interactive">
+            <div class="PToneDiv">
+                <div style="width: auto; height: auto; color: #000; float: left; font-size: 24px;">events</div>
+                <div class="MTSelectDiv" style="margin: 8px 0px 0px 0px;">
+                    <select>
+                        <option selected="selected">select events</option>
+                        <option>Demo 1</option>
+                        <option>Demo 2</option>
+                        <option>Demo 3</option>
+                        <option>Demo 4</option>
+                        <option>Demo 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PlaysTicketsTemlate-->
+
+    <!--SportTicketsTemlate-->
+    <div class="SportTicketsBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="SportTicketsTemlate win-interactive">
+            <div class="PToneDiv">
+                <div style="width: auto; height: auto; color: #000; float: left; font-size: 24px;">sports</div>
+                <div class="MTSelectDiv" style="margin: 8px 0px 0px 0px;">
+                    <select>
+                        <option selected="selected">select sports</option>
+                        <option>Demo 1</option>
+                        <option>Demo 2</option>
+                        <option>Demo 3</option>
+                        <option>Demo 4</option>
+                        <option>Demo 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SportTicketsTemlate-->
+
+    <!--MybookingTemlate-->
+    <div class="MybookingBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="MybookingTemlate" data-win-bind="style.backgroundColor: backgroundColor">
+            <div class="MybookingMainDIv">
+                <div class="MybookingTitle" data-win-bind="textContent: title"></div>
+                <div class="MybookingTitleSub" data-win-bind="textContent: titleSub"></div>
+                <div class="MybookingTextDay" data-win-bind="textContent: textDay"></div>
+                <div class="MybookingTextTime" data-win-bind="textContent:  textTime"></div>
+            </div>
+        </div>
+    </div>
+    <!--MybookingTemlate-->
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment HubPage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button" style="z-index:55; position:absolute;"></button>
+             <div class="titlearea">
+                <div class="MainLogo"><img src="../../images/AppLogo.png" /></div>
+            </div>
+        </header>
+        <section aria-label="Main content" role="main"  style="overflow-x: auto;">
+            <div class="HubPageMainDiv">
+                <div class="MainImage">
+                    <div class="ImageTextDiv">
+                        <div class="BIGBgTitle">Featured Event</div>
+                        <div class="BIGBgSubTitle">
+                            Title live<br />
+                            at sub title
+                        </div>
+                    </div>
+                </div>
+                <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none' }" style="-ms-grid-column: 2; overflow-x: hidden;"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
