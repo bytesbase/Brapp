@@ -1,8 +1,13 @@
 ﻿#contenthost {
     height: 100%;
     width: 100%;
+<<<<<<< HEAD:BR@PP/BRAPP/css/default.css
     background-size:cover;
 	background-color: #5cc9e7;
+=======
+    background:url(../../images/bg.png);
+    background-size:cover;
+>>>>>>> origin/master:BR@PP/BRAPP/css/default.css
 }
 
 .fragment {

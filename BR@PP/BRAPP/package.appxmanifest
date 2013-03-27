@@ -15,9 +15,19 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
+<<<<<<< HEAD:BR@PP/BRAPP/package.appxmanifest
       <VisualElements DisplayName="BRAPP" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="BRAPP" ForegroundText="light" BackgroundColor="#5cc9e7">
         <DefaultTile ShowName="allLogos" WideLogo="images\widelogo.png" ShortName="BR@PP" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#5cc9e7" />
+=======
+      <VisualElements DisplayName="BRAPP" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="BRAPP" ForegroundText="light" BackgroundColor="#464646">
+<<<<<<< HEAD:BRAPP/BRAPP/package.appxmanifest
+        <DefaultTile ShowName="allLogos" ShortName="BR@PP" WideLogo="images\WideLogo.png" />
+=======
+        <DefaultTile ShowName="allLogos" WideLogo="images\widelogo.png" ShortName="BR@PP" />
+>>>>>>> origin/Vincent-dev:BR@PP/BRAPP/package.appxmanifest
+        <SplashScreen Image="images\splashscreen.png" />
+>>>>>>> origin/master:BR@PP/BRAPP/package.appxmanifest
       </VisualElements>
       <Extensions>
         <Extension Category="windows.search" />
