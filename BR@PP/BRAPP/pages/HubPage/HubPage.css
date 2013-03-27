@@ -1,4 +1,7 @@
-﻿.HubPage section[role=main] {
+﻿body{
+	background-color: #5cc9e7;
+	}
+.HubPage section[role=main] {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
 }
